@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optimus stealth 60-min reviews</title>
+  <style>
+    :root {
+      --ink:#e8eef6; --muted:#94a3b8; --page:#0b1320; --panel:#111c2c;
+      --line:#29384d; --green:#3bd4ae; --red:#ff6f61; --yellow:#f5c451;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--page); color:var(--ink);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .shell { width:min(920px, calc(100% - 28px)); margin:0 auto; padding:28px 0 56px; }
+    .eyebrow { color:var(--green); letter-spacing:.14em; font-size:12px; font-weight:800; text-transform:uppercase; }
+    h1 { margin:8px 0 8px; font-size:clamp(26px,4vw,36px); letter-spacing:-.03em; }
+    .sub { color:var(--muted); line-height:1.5; max-width:640px; }
+    .hero { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:22px 0 28px; }
+    .metric { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px; }
+    .metric span { color:var(--muted); font-size:12px; display:block; margin-bottom:6px; }
+    .metric strong { font-size:28px; letter-spacing:-.03em; }
+    .yes { color:var(--green); } .no { color:var(--red); }
+    details.report { background:var(--panel); border:1px solid var(--line); border-radius:14px; margin:0 0 10px; }
+    summary { list-style:none; cursor:pointer; display:flex; flex-wrap:wrap; gap:10px 16px;
+      align-items:center; padding:14px 16px; }
+    summary::-webkit-details-marker { display:none; }
+    .when { font-weight:700; }
+    .badge { font-size:12px; font-weight:800; padding:5px 9px; border-radius:999px; border:1px solid var(--line); }
+    .badge.yes { color:var(--green); border-color:rgba(59,212,174,.4); }
+    .badge.no { color:var(--red); border-color:rgba(255,111,97,.4); }
+    .pct { color:var(--yellow); font-weight:700; margin-left:auto; }
+    .block { margin:0; padding:0 16px 14px; white-space:pre-wrap; color:#d7e3f2; font-size:13px; line-height:1.45; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:0 16px 16px; }
+    h3 { margin:0 0 8px; font-size:13px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+    ul { margin:0; padding-left:18px; } li { margin:0 0 6px; }
+    .recs code { white-space:pre-wrap; font-family:inherit; font-size:13px; }
+    .muted,.ok { color:var(--muted); }
+    .foot { margin-top:22px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) {
+      .hero,.split { grid-template-columns:1fr; }
+      .pct { margin-left:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="eyebrow">Compound 3.0 · Techy stealth review</div>
+    <h1>Optimus 60-minute reviews</h1>
+    <p class="sub">Independent observation only, from this loop forward. Optimus is not told these exist. Newest report is open; every later report stays listed below it.</p>
+    <div class="hero">
+      <div class="metric"><span>Latest on track</span><strong class="no">no</strong></div>
+      <div class="metric"><span>Latest SOW (start → end)</span><strong>65% → 65%</strong></div>
+      <div class="metric"><span>Reports since start</span><strong>1</strong></div>
+    </div>
+    <details class='report'  open>
+  <summary>
+    <span class='when'>2026-09-19T20:23:18-06:00</span>
+    <span class='badge no'>On Track: no</span>
+    <span class='pct'>65% → 65%</span>
+  </summary>
+  <pre class='block'>STEALTH 60-MIN REVIEW
+Optimus On Track: no
+SOW Progress at Hour Start: 65%
+SOW Progress at the Hour End: 65%
+Problems Identified: Yes
+- No verified QBO or RTD POST+readback this hour (last QBO POST 2026-09-18 16:03 MDT ClassRef; no RTD POST in broker log)
+- RR-BLK-017 West Point $139 packet is Inspector FAIL/NO-GO; remainder row still open
+- CURRENT.md last 17:53 MDT; later files are proof/composition, not closes
+Any recommendations for improvement:
+- Stop proof-only. Continue SOW 0.23. Land a verified GET-one POST-readback on a named lock this cycle, or retire one remainder row with Inspector PASS. Do not wait on canary A/B. One negative then switch. Run parallel closeable tracks.</pre>
+  <div class='split'>
+    <div><h3>Problems</h3><ul><li>No verified QBO or RTD POST+readback this hour (last QBO POST 2026-09-18 16:03 MDT ClassRef; no RTD POST in broker log)</li><li>RR-BLK-017 West Point $139 packet is Inspector FAIL/NO-GO; remainder row still open</li><li>CURRENT.md last 17:53 MDT; later files are proof/composition, not closes</li></ul></div>
+    <div><h3>Copy-paste recs for Optimus</h3><ul class='recs'><li><code>Stop proof-only. Continue SOW 0.23. Land a verified GET-one POST-readback on a named lock this cycle, or retire one remainder row with Inspector PASS. Do not wait on canary A/B. One negative then switch. Run parallel closeable tracks.</code></li></ul></div>
+  </div>
+</details>
+    <p class="foot">Updated 2026-09-19T20:24:58-06:00 MDT. Entire SOW % is live weighted, not ClassRef 99%.</p>
+  </div>
+</body>
+</html>
