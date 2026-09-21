@@ -51,9 +51,31 @@
     <div class="hero">
       <div class="metric"><span>Latest on track</span><strong class="no">no</strong></div>
       <div class="metric"><span>Latest SOW (start → end)</span><strong>85% → 85%</strong></div>
-      <div class="metric"><span>Reports since start</span><strong>25</strong></div>
+      <div class="metric"><span>Reports since start</span><strong>26</strong></div>
     </div>
     <details class='report'  open>
+  <summary>
+    <span class='when'>2026-09-20T23:35:18-06:00</span>
+    <span class='badge no'>On Track: no</span>
+    <span class='pct'>85% → 85%</span>
+  </summary>
+  <pre class='block'>STEALTH 60-MIN REVIEW
+Optimus On Track: no
+SOW Progress at Hour Start: 85%
+SOW Progress at the Hour End: 85%
+Problems Identified: Yes
+- 0% material progress this hour — major issue; Optimus not contacted (Grant: report to Grant only)
+- No verified QBO or RTD POST+readback this hour (broker: QBO GETs only; last production RTD POST 2026-09-20 20:50 MDT Batch 002 162991712)
+- No parent remainder-row retire; 22 parents still open; safe-write queue 0/3
+- RR-BLK-005 Inspector counterpart PASS WITH QUALIFICATION and $1,325 RTD arithmetic do not close the parent; negative QBO/Gmail routes and capability packets with 0 POSTs do not raise displayed Entire SOW
+Any recommendations for improvement:
+- Continue SOW 0.24 from Claude’s packet only. Land a verified GET → one POST → readback on a named lock this cycle, or retire one parent remainder row with Inspector PASS. Do not wait idle on A/B/U for the $40 Sunnyside faucet. One negative then switch. Do not treat RR-BLK-005 counterpart packets as hour completion until the parent closes.</pre>
+  <div class='split'>
+    <div><h3>Problems</h3><ul><li>0% material progress this hour — major issue; Optimus not contacted (Grant: report to Grant only)</li><li>No verified QBO or RTD POST+readback this hour (broker: QBO GETs only; last production RTD POST 2026-09-20 20:50 MDT Batch 002 162991712)</li><li>No parent remainder-row retire; 22 parents still open; safe-write queue 0/3</li><li>RR-BLK-005 Inspector counterpart PASS WITH QUALIFICATION and $1,325 RTD arithmetic do not close the parent; negative QBO/Gmail routes and capability packets with 0 POSTs do not raise displayed Entire SOW</li></ul></div>
+    <div><h3>Copy-paste recs for Optimus</h3><ul class='recs'><li><code>Continue SOW 0.24 from Claude’s packet only. Land a verified GET → one POST → readback on a named lock this cycle, or retire one parent remainder row with Inspector PASS. Do not wait idle on A/B/U for the $40 Sunnyside faucet. One negative then switch. Do not treat RR-BLK-005 counterpart packets as hour completion until the parent closes.</code></li></ul></div>
+  </div>
+</details>
+<details class='report' >
   <summary>
     <span class='when'>2026-09-20T22:35:22-06:00</span>
     <span class='badge no'>On Track: no</span>
@@ -550,7 +572,7 @@ Any recommendations for improvement:
     <div><h3>Copy-paste recs for Optimus</h3><ul class='recs'><li><code>Stop proof-only. Continue SOW 0.23. Land a verified GET-one POST-readback on a named lock this cycle, or retire one remainder row with Inspector PASS. Do not wait on canary A/B. One negative then switch. Run parallel closeable tracks.</code></li></ul></div>
   </div>
 </details>
-    <p class="foot">Updated 2026-09-20T22:35:22-06:00 MDT. Entire SOW % is live weighted, not ClassRef 99%.</p>
+    <p class="foot">Updated 2026-09-20T23:35:18-06:00 MDT. Entire SOW % is live weighted, not ClassRef 99%.</p>
   </div>
 </body>
 </html>
